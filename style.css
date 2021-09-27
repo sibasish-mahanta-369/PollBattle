@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: whitesmoke;
+    background-color: black; /* A white line sometimes appears at sides or bottom in mobile view multiple things are causing the problem*/
+    overflow-x: hidden;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    backface-visibility: hidden;
+}
+
+nav {
+    overflow: hidden;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.name {
+    color: white;
+    font-size: 7vh;
+    display: inline;
+    padding-left: 10vh;
+    line-height: 10vh;
+}
+
+.menu {
+    display: inline;
+    float: right;
+    margin-right: 2.5vh;
+    line-height: 10vh;
+}
+
+nav a {
+    color: white;
+    font-size: 3.5vh;
+    padding: 0 1.5vh;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background: darkorange;
+    transition: .2s;
+    border: none;
+    box-shadow: none;
+}
+
+.nav-button {
+    display: none;
+    font-size: 26px;
+    color: white;
+}
+
+#toggle {
+    display: none;
+}
+
+.mobmenu a {
+    display: none;
+}
+
+.intro {
+    margin-right: 6vw;
+    margin-left: 6vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(29, 1, 29, 0.801)), url("intro.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-top-heading {
+    margin-top: 10vh;
+    color: white;
+    width: 70vw;
+    font-size: 14vh;
+    font-weight: 300;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.goto{
+    display: inline-block;
+    margin-top: 0vh;
+    background-image: url("button.jpg");
+    width: max-content;
+    border-radius: 40px;
+    background-size: cover;
+    color: rgb(53, 8, 53);
+    padding: 1vh;
+    font-size: 6vh;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.goto:hover {
+    transform: translate(-50%, -10%);
+    box-shadow: 0px 5px 10px 0px rgb(129, 49, 169);
+}
+
+.main-bottom-heading {
+    margin-bottom: 6vh;
+    color: white;
+    font-size: 7vh;
+    width: 80vw;
+    text-align: center;
+    font-weight: 100;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+.about-heading{
+    margin-right: 6vw;
+    margin-left: 6vw;
+    height: auto;
+    background-color: rgba(34, 27, 41, 0.885);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 7vh;
+}
+.about {
+    margin-right: 6vw;
+    margin-left: 6vw;
+    height: auto;
+    background-color: rgba(34, 27, 41, 0.705);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.contributors {
+    margin-top: 7vh;
+    width: 50vh;
+    height: 80vh;
+    background-color: rgb(20, 18, 20);
+    clip-path: polygon(0 5vh, 50vh 0, 50vh 65vh, 0 70vh);
+}
+.contributors img{
+    padding-top: 5vh;
+    width: 50vh;
+}
+.contributors p{
+    font-size: 2.5vh;
+}
+.box {
+    display: flex;
+    width: 70vh;
+    height: 70vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    background-color: rgb(20, 18, 20);
+    align-content: center;
+    box-shadow: 10px 10px 8px 2px black;
+    padding: 40px;
+    font-size: 2.7vh;
+}
+
+.polling-area-heading {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(14, 5, 23), rgb(34, 23, 44));
+    color: whitesmoke;
+    display: block;
+    font-size: 7vh;
+    margin: 0 6vw;
+}
+
+.pollingarea {
+    padding: 5vh 0vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 6vw;
+    background-color: rgb(34, 23, 44);
+}
+
+.poll {
+    margin-bottom: 5vh;
+    overflow-x: hidden;
+    background-color: black;
+    width: 45vh;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.poll:hover {
+    transform: translate3D(0,-1px,0) scale(1.03);
+    box-shadow: 8px 28px 50px 0px black;
+    transition: all .1s ease; 
+    cursor: pointer;
+}
+.poll img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.pollheading {
+    width: 100%;
+    font-size: 4vh;
+    padding: 1vh;
+    background-image: url("pollheading.jpg");
+    color: rgba(255, 255, 255, 0.905);
+    text-align: center;
+}
+
+.polldescrip {
+    width: 100%;
+    overflow: auto;
+    padding: 1vh;
+    font-size: 2.7vh;
+    background-color: rgb(42, 45, 48);
+    color: white;
+    text-align: center;
+}
+
+.vote {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    background-color: black;
+}
+
+.vote a {
+    color: white;
+    margin: auto;
+    height: 5vh;
+    padding: 0 1vh;
+    background-color: #800080;
+    border-radius: 10px;
+    font-size: 3.8vh;
+    justify-content: center;
+}
+
+.vote a:hover {
+    top: 50%;
+    cursor: pointer;
+    background: darkorange;
+    border: 2px solid white;
+    font-size: 3.6vh;
+    box-shadow: none;
+    transform: none;
+}
+
+.more {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(34, 23, 44), black);
+    color: whitesmoke;
+    display: block;
+    font-size: 4vh;
+    margin: 0 6vw;
+    padding-bottom: 2vh;
+}
+
+footer {
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.lowername {
+    display: inline;
+    color: white;
+    padding-left: 2vw;
+
+}
+
+#lowerpollbattle {
+    font-size: 6.5vh;
+}
+
+.follow {
+    display: inline;
+    color: white;
+    font-size: 3.5vh;
+    padding-right: 2vw;
+}
+@media only screen and (max-width: 1024px) {
+    
+    .vote a:active {
+        transform: none;
+        box-shadow: none;
+    }
+    .mobmenu a:active{
+        transform: none;
+        box-shadow: none;
+    }
+    .mobmenu a:hover{
+        transform: none;
+        background-color: purple;
+        
+    }
+    .main-top-heading  {
+        padding-top: 5vh;
+        width: 90vw;
+        font-size: 10vh;
+        padding-left: 0;
+    }
+
+    .main-bottom-heading {
+        width: 85vw;
+        font-size: 4.5vh;
+    }
+
+    .intro {
+        height: 100vh;
+    }
+
+    .goto {
+
+        font-size: 4vh;
+    }
+
+    .about {
+        height: auto;
+    }
+    .box {
+        margin-bottom: 5vh;
+        width: 80vw;
+        height:auto;
+    }
+    .contributors {
+        width: 75vw;
+        clip-path: polygon(0 8vh, 75vw 0, 75vw 72vh, 0 80vh);
+    }
+    .contributors img{
+        width: 30vh; 
+    }
+    .nav-button {
+        display: inline;
+        float: right;
+        margin-right: 1vw;
+        line-height: 10vh;
+        font-size: 5vh;
+    }
+
+    .name {
+        font-size: 5.5vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .poll{
+        height: auto;
+    }
+    #lowerpollbattle {
+        font-size: 5vh;
+    }
+
+    .follow {
+        font-size: 2.5vh;
+    }
+
+    #toggle:checked+.mobmenu {
+        margin-top: 10vh;
+        position: fixed;
+        display: flex;
+        height: 90vh;
+        width: 100vw;
+        right: 0;
+        background-color: #500250;
+        font-size: 5vh;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 1;
+        transition: all 0.25s ease-out;
+    }
+    #toggle:checked+.mobmenu a {
+        display: block;
+        color: white;
+        font-size: 5vh;
+        width: 90vw;
+        margin-left: 5vw;
+        border-radius: 10px;
+    }
+    .exit {
+        width: 85vw;
+        display: block;
+        color: white;
+        margin-left: 5vw;
+        border-radius: 10px;
+        background-color: rgb(38, 8, 44);
+    }
+}
