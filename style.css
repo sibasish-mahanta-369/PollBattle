@@ -309,7 +309,6 @@ footer {
         
     }
     .main-top-heading  {
-        padding-top: 5vh;
         width: 90vw;
         font-size: 10vh;
         padding-left: 0;
@@ -318,6 +317,7 @@ footer {
     .main-bottom-heading {
         width: 85vw;
         font-size: 4.5vh;
+        margin-bottom: 10vh;
     }
 
     .intro {
@@ -385,6 +385,7 @@ footer {
         justify-content: space-around;
         z-index: 1;
         transition: all 0.25s ease-out;
+        padding-bottom: 7vh;
     }
     #toggle:checked+.mobmenu a {
         display: block;
